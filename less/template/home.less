@@ -1,0 +1,103 @@
+.home {
+	position: relative;
+	min-width: (288em/16);
+	min-height: (480em/16);
+}
+
+/*--- Header ---*/
+.head {
+	position: absolute;
+	left: 0;
+	right: 0;
+	bottom: 5.5em;
+	font-size: (12em/16);
+}
+.title {
+	@tracking: .250em;
+	color: @text-black;
+	font-size: inherit;
+	font-weight: 400;
+	text-align: center;
+	letter-spacing: @tracking;
+	text-indent: @tracking;
+	line-height: 1;
+}
+/*--- Header END ---*/
+
+/*--- Main ---*/
+.home main {
+	position: relative;
+	top: 50%;
+	text-align: center;
+	transform: translateY(-50%);
+}
+.logo {
+	width: (120em/16);
+	height: (120em/16);
+	margin: 0 auto;
+	
+	svg {
+		fill: @text-black;
+	}
+}
+.desc {
+	padding: 4em 0 9em;
+	font-size: (20em/16);
+	
+	:lang(en) {
+		@tracking: .015em;
+		letter-spacing: @tracking;
+		text-indent: @tracking;
+		
+		/* Typekit */
+		opacity: 1;
+		transition: opacity .15s ease-out;
+		.wf-loading & {
+			visibility: hidden;
+			opacity: 0;
+		}
+	}
+	:lang(jp) {
+		@tracking: .050em;
+		font-family: @font-base-serif-jp;
+		letter-spacing: @tracking;
+		text-indent: (@tracking + .5em);
+	}
+}
+@import "avatar";
+/*--- Main END ---*/
+
+/*--- Footer ---*/
+.foot {
+	@tracking: .025em;
+	position: absolute;
+	left: 0;
+	right: 0;
+	bottom: 4em;
+	color: @text-black;
+	font-size: (12em/16);
+	text-align: center;
+	letter-spacing: @tracking;
+	text-indent: @tracking;
+	
+	/* Typekit */
+	opacity: 1;
+	transition: opacity .15s ease-out;
+	.wf-loading & {
+		visibility: hidden;
+		opacity: 0;
+	}
+}
+.foot-ampersand {
+	font-style: italic;
+}
+.foot-team {
+	font-style: italic;
+	
+	&:hover,
+	&:active {
+		padding-bottom: 1px;
+		border-bottom: 1px solid;
+	}
+}
+/*--- Footer END ---*/

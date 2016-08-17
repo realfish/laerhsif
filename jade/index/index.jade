@@ -1,0 +1,82 @@
+extends ../_template
+
+block var
+	//- - var assetsPath = ""
+	- var pageTitl = "鱼缸"
+	- var pageDisc = "鱼缸"
+	- var pageKeyw = "鱼缸, 钱争予, realfish, laerhsif, designer, typographer"
+	- var bodyClass = "home"
+	- var bodyClassModifier = ""
+	//--- Data
+	-
+		var data = {
+			"title": "尚在注水的鱼缸",
+			"desc": {
+				"en": "An anti-disciplinary designer.",
+				"jp": "また、一職人である。"
+			},
+			"avatar": [
+				{
+					"id": "zhihu",
+					"title": "Essay",
+					"url": "https://zhuanlan.zhihu.com/poisson"
+				}, {
+					"id": "itunes",
+					"title": "Podcast",
+					"url": "https://itunes.apple.com/podcast/zi-tan-zi-chang/id1041704528"
+					
+				}, {
+					"id": "flickr",
+					"title": "Portfolio",
+					"url": "https://www.flickr.com/realfish"
+					
+				}, {
+					"id": "twitter",
+					"title": "Twitter",
+					"url": "https://twitter.com/laerhsif"
+					
+				}, {
+					"id": "instagram",
+					"title": "Instagram",
+					"url": "https://www.instagram.com/realfish"
+				}, {
+					"id": "github",
+					"title": "GitHub",
+					"url": "https://github.com/realfish"
+				}
+			],
+			"team": [
+				{
+					"title": "Type is Beautiful",
+					"url": "http://typeisbeautiful.com/author/laerhsif"
+				}, {
+					"title": "CNPolitics",
+					"url": "http://cnpolitics.org/author/qianzhengyu"
+				}
+			]
+		}
+
+block bodyHeader
+	header.head
+		h1.title= data.title
+
+block bodyMain
+	main(role="main")
+		figure.logo(title="Logo")
+			include logo.svg
+		.desc
+			p(lang="jp")= data.desc.jp
+			p(lang="en")= data.desc.en
+		
+		ul.avatar
+			each item in data.avatar
+				li.avatar-node
+					a.avatar-link(href="#{item.url}")
+						span.avatar-name= item.title
+
+block bodyFooter
+	footer.foot Making things at 
+		a.foot-team(href="#{data.team[0].url}")= data.team[0].title
+		span.foot-ampersand  &amp; 
+		a.foot-team(href="#{data.team[1].url}")= data.team[1].title
+		| .

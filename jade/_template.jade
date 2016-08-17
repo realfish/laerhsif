@@ -1,0 +1,24 @@
+doctype html
+
+block var
+	- var pageTitl
+	- var pageDisc
+	- var pageKeyw
+	- var bodyClass
+	- var bodyClassModifier
+
+- if (bodyClassModifier) bodyClassModifier = " " + bodyClassModifier
+
+html(lang="zh-Hans")
+	block head
+		include _head
+	
+	body(class=(bodyClass + bodyClassModifier))
+		block bodyHeader
+		
+		block bodyMain
+		
+		block bodyFooter
+		
+		block bodyScripts
+			script(type="text/javascript" src="#{assetsPath}assets/app.js?v=#{verTag}")
