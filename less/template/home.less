@@ -48,18 +48,9 @@
 		@tracking: .015em;
 		letter-spacing: @tracking;
 		text-indent: @tracking;
-		
-		/* Typekit */
-		opacity: 1;
-		transition: opacity .15s ease-out;
-		.wf-loading & {
-			visibility: hidden;
-			opacity: 0;
-		}
 	}
 	:lang(jp) {
 		@tracking: .050em;
-		font-family: @font-base-serif-jp;
 		letter-spacing: @tracking;
 		text-indent: (@tracking + .5em);
 	}
@@ -79,14 +70,6 @@
 	text-align: center;
 	letter-spacing: @tracking;
 	text-indent: @tracking;
-	
-	/* Typekit */
-	opacity: 1;
-	transition: opacity .15s ease-out;
-	.wf-loading & {
-		visibility: hidden;
-		opacity: 0;
-	}
 }
 .foot-ampersand {
 	font-style: italic;
