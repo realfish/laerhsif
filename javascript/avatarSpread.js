@@ -14,39 +14,37 @@
 		event.stopPropagation();
 	});
 	
-	// Event namespaces
-	var EVENT_SPREAD = '.spread';
-	var EVENT_REVERT = '.revert';
+	var $avatar = $('.avatar');
+	var $avatarNode = $('.avatar-node');
 	
-	// Handle to spread the dots of `.avatar`
+	// Handle to spread the nodes of `.avatar`
 	var avatarSpread = function() {
-		$(this).off(EVENT_SPREAD);
+		// Switch handle
+		$avatar.off('.spread').on('click.revert', avatarRevert);
 		
-		$('.avatar-node').each(function() {
+		// Do spreading
+		$avatarNode.each(function() {
 			var $this = $(this);
 			
-			$this.on(animationiteration, function() {
-				$this.addClass('is-paused');
-				$this.off(animationiteration);
-			});
-		})
-		.promise()
-		.done(avatarRevert);
+			if ( !$this.hasClass('is-paused') ) {
+				$this.on(animationiteration, function() {
+					$this.addClass('is-paused');
+					$this.off(animationiteration);
+				});
+			}
+		});
 	};
 	
 	// Handle to revert handle `avatarSpread`
 	var avatarRevert = function() {
-		$('.avatar').on('click' + EVENT_REVERT, function() {
-			$('.avatar-node').each(function() {
-				var $this = $(this);
-				$this.removeClass('is-paused');
-			});
-			
-			$('.avatar').off(EVENT_REVERT).on('click' + EVENT_SPREAD, avatarSpread);
-		});
+		// Switch handle
+		$avatar.off('.revert').on('click.spread', avatarSpread);
+		
+		// Do reverting
+		$avatarNode.removeClass('is-paused');
 	};
 	
 	// Init
-	$('.avatar').on('click' + EVENT_SPREAD, avatarSpread);
+	$avatar.on('click.spread', avatarSpread);
 
 })();
