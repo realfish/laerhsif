@@ -1,6 +1,4 @@
 -
-	var verTag = "1.2.0"
-	var assetsPath = "/"
 	var siteRoot = "http://laerhsif.com"	// http://realfish-rmbp.local:5757
 
 doctype html
@@ -26,4 +24,5 @@ html(lang="zh")
 		block bodyFooter
 		
 		block bodyScripts
+			script(type="text/javascript" src="#{assetsPath}assets/libs.js?v=#{verTag}")
 			script(type="text/javascript" src="#{assetsPath}assets/app.js?v=#{verTag}")
