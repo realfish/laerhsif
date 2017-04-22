@@ -1,6 +1,9 @@
 # Design dir
 design/
 
+# GitHub Pages temp dir
+.gh-pages/
+
 # CodeKit config
 config.codekit
 
