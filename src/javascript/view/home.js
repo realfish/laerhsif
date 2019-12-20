@@ -11,55 +11,46 @@ for (let i = 0; i < $allAvatarLinks.length; i++) {
 	});
 }
 
-// var $avatar = $('.avatar');
-// var $avatarNode = $('.avatar-node');
-let $avatar = doc.querySelector('.avatar');
+
+
+// Handle avatar node's spinning
+let $avatar         = doc.querySelector('.avatar');
 let $allAvatarNodes = doc.querySelectorAll('.avatar-node');
-let isSpread = true;
+let isSpin          = true;
 
-
-// Handle to spread the nodes of `.avatar`
-/* var avatarSpread = function() {
-	// Switch handle
-	$avatar.off('.spread').on('click.revert', avatarRevert);
-	
-	// Do spreading
-	$avatarNode.each(function() {
-		var $this = $(this);
-		
-		if ( !$this.hasClass('is-paused') ) {
-			$this.on(animationiteration, function() {
-				$this.addClass('is-paused');
-				$this.off(animationiteration);
-			});
+// Ref: https://css-tricks.com/controlling-css-animations-transitions-javascript/
+const PFX = ["webkit", "moz", "MS", "o", ""];
+let prefixedEvent = function ($el, type, callback) {
+	for (let i = 0; i < PFX.length; i++) {
+		if (!PFX[i]) {
+			type = type.toLowerCase();
 		}
-	});
-}; */
+		$el.addEventListener(PFX[i] + type, callback, false);
+	}
+};
+
 let stopNodes = function () {
 	// Flip the flag
-	isSpread = false;
+	isSpin = false;
 	
 	for (let i = 0; i < $allAvatarNodes.length; i++) {
 		let $node = $allAvatarNodes[i];
 		if (!$node.classList.contains('is-paused')) {
-			$node.addEventListener('animationiteration', function () {
+			let pauseNode = function () {
+				let $node = $allAvatarNodes[i];
 				$node.classList.add('is-paused');
-			});
+				$node.removeEventListener('animationiteration', pauseNode);
+				pauseNode = null;
+			};
+			
+			// $node.addEventListener('animationiteration', pauseNode);
+			prefixedEvent($node, "animationiteration", pauseNode);
 		}
 	}
 };
-
-// Handle to revert handle `avatarSpread`
-/* var avatarRevert = function() {
-	// Switch handle
-	$avatar.off('.revert').on('click.spread', avatarSpread);
-	
-	// Do reverting
-	$avatarNode.removeClass('is-paused');
-}; */
 let spinNodes = function () {
 	// Flip the flag
-	isSpread = true;
+	isSpin = true;
 	
 	// Do reverting
 	for (let i = 0; i < $allAvatarNodes.length; i++) {
@@ -68,10 +59,8 @@ let spinNodes = function () {
 	}
 };
 
-// Init
-// $avatar.on('click.spread', avatarSpread);
 $avatar.addEventListener('click', function () {
-	if (isSpread) {
+	if (isSpin) {
 		stopNodes();
 	} else {
 		spinNodes();
