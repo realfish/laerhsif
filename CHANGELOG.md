@@ -1,6 +1,13 @@
 CHANGELOG
 =========
 
+### [v2.0.1][2.0.1] (2019-12-21)
+
+#### Fixed
+- Fix comments for `libs.js`.
+
+* * *
+
 ### [v2.0.0][2.0.0] (2019-12-20)
 
 #### Added
@@ -28,4 +35,5 @@ Testbench: <https://laerhsif.com/?v=2.0.0>
 
 
 
+[2.0.1]:         https://github.com/realfish/laerhsif/compare/v2.0.0...v2.0.1
 [2.0.0]:         https://github.com/realfish/laerhsif/compare/v1.3.0...v2.0.0
