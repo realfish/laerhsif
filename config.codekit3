@@ -23,6 +23,25 @@
 		"oAP": "/dist/.gitignore",
 		"oF": 1
 		},
+	"/CHANGELOG.md": {
+		"cB": 0,
+		"cS": 0,
+		"eF": 1,
+		"eL": 1,
+		"ema": 1,
+		"eSQ": 1,
+		"ft": 4096,
+		"hM": 0,
+		"oA": 1,
+		"oAP": "/dist/CHANGELOG.html",
+		"oF": 1,
+		"oFM": 0,
+		"oS": 0,
+		"pHT": 0,
+		"pME": 1,
+		"rFN": 0,
+		"uCM": 0
+		},
 	"/deploy.realfish": {
 		"cB": 0,
 		"ft": 8192,
@@ -155,8 +174,8 @@
 	"/src/javascript/_app.js": {
 		"bF": 4,
 		"ft": 64,
-		"ma": 1,
-		"mi": 0,
+		"ma": 0,
+		"mi": 1,
 		"oA": 0,
 		"oAP": "/dist/assets/app.js",
 		"oF": 3,
@@ -384,7 +403,7 @@
 	"displayValueWasSetByUser": 0,
 	"iconImageName": "/src/assets/apple-touch-icon-180.png",
 	"iconImageWasSetByUser": 0,
-	"lastBuiltDate": 598549194.723243
+	"lastBuiltDate": 598550483.71807098
 	},
 "projectSettings": {
 	"abortBuildOnError": 1,
