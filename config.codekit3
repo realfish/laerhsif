@@ -226,17 +226,6 @@
 		"sC": 3,
 		"tS": 0
 		},
-	"/src/javascript/vendor/jquery.min.js": {
-		"bF": 0,
-		"ft": 64,
-		"ma": 0,
-		"mi": 1,
-		"oA": 1,
-		"oAP": "/dist/javascript/vendor/min/jquery.min-min.js",
-		"oF": 0,
-		"sC": 3,
-		"tS": 1
-		},
 	"/src/javascript/view/home.js": {
 		"bF": 0,
 		"ft": 64,
@@ -388,14 +377,6 @@
 "hooks": [
 	],
 "manualImportLinks": {
-	"/src/javascript/_libs.js": [
-		{
-			"followForSyntaxChecking": 1,
-			"linkedFileAbbreviatedPath": "/src/javascript/vendor/jquery.min.js",
-			"position": 0,
-			"type": 1
-			}
-		]
 	},
 "projectAttributes": {
 	"creationDate": 514572236,
@@ -403,7 +384,7 @@
 	"displayValueWasSetByUser": 0,
 	"iconImageName": "/src/assets/apple-touch-icon-180.png",
 	"iconImageWasSetByUser": 0,
-	"lastBuiltDate": 598552829.00042403
+	"lastBuiltDate": 598553235.40645301
 	},
 "projectSettings": {
 	"abortBuildOnError": 1,
