@@ -75,12 +75,12 @@ block bodyMain
 		ul.avatar
 			each item in data.avatar
 				li.avatar-node
-					a.avatar-link(href="#{item.url}")
+					a.avatar-link(href=item.url)
 						span.avatar-name= item.title
 
 block bodyFooter
 	footer.foot Making things at 
-		a.foot-team(href="#{data.team[0].url}")= data.team[0].title
+		a.foot-team(href=data.team[0].url)= data.team[0].title
 		span.foot-ampersand  &amp; 
-		a.foot-team(href="#{data.team[1].url}")= data.team[1].title
+		a.foot-team(href=data.team[1].url)= data.team[1].title
 		| .
