@@ -4,10 +4,6 @@ let doc = document;
 import _misc from './_misc';
 _misc();
 
-// Class
-
-
-
 // View
 import viewHome from './view/home';
 
@@ -20,4 +16,3 @@ switch (view) {
 		break;
 	}
 }
-
