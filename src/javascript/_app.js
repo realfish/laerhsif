@@ -1,4 +1,23 @@
-/**
- * Assembly list:
- * 1. main.js
- */
+let doc = document;
+
+// Misc
+import _misc from './_misc';
+_misc();
+
+// Class
+
+
+
+// View
+import viewHome from './view/home';
+
+// View router
+let view = doc.querySelector('body').classList[0];
+
+switch (view) {
+	case 'home': {
+		viewHome();
+		break;
+	}
+}
+
