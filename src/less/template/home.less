@@ -43,6 +43,7 @@
 .desc {
 	padding: 4em 0 9em;
 	font-size: (20em/16);
+	line-height: (24/20);
 	
 	:lang(en) {
 		@tracking: .015em;
@@ -55,7 +56,6 @@
 		text-indent: (@tracking + .5em);
 	}
 }
-@import "avatar";
 /*--- Main END ---*/
 
 /*--- Footer ---*/
@@ -77,9 +77,8 @@
 .foot-team {
 	font-style: italic;
 	
-	&:hover,
+	.ua-Pointer &:hover,
 	&:active {
-		padding-bottom: 1px;
 		border-bottom: 1px solid;
 	}
 }

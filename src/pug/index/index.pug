@@ -1,7 +1,7 @@
 extends ../_template
 
 block var
-	- var assetsPath = ""
+	- var assetsPath = "./"
 	- var pageTitl = "鱼缸"
 	- var pageDisc = "An anti-disciplinary designer, making things at Type is Beautiful & CNPolitics."
 	- var pageKeyw = "鱼缸, 钱争予, realfish, laerhsif, designer, typographer, developer"
@@ -23,7 +23,7 @@ block var
 				{
 					"id": "zhihu",
 					"title": "Essay",
-					"url": "https://zhuanlan.zhihu.com/poisson"
+					"url": "https://poisson.laerhsif.com"
 				}, {
 					"id": "itunes",
 					"title": "Podcast",
@@ -52,7 +52,7 @@ block var
 			"team": [
 				{
 					"title": "Type is Beautiful",
-					"url": "http://typeisbeautiful.com/author/laerhsif"
+					"url": "https://thetype.com/author/laerhsif"
 				}, {
 					"title": "CNPolitics",
 					"url": "http://cnpolitics.org/author/qianzhengyu"
@@ -75,12 +75,12 @@ block bodyMain
 		ul.avatar
 			each item in data.avatar
 				li.avatar-node
-					a.avatar-link(href="#{item.url}")
+					a.avatar-link(href=item.url)
 						span.avatar-name= item.title
 
 block bodyFooter
 	footer.foot Making things at 
-		a.foot-team(href="#{data.team[0].url}")= data.team[0].title
+		a.foot-team(href=data.team[0].url)= data.team[0].title
 		span.foot-ampersand  &amp; 
-		a.foot-team(href="#{data.team[1].url}")= data.team[1].title
+		a.foot-team(href=data.team[1].url)= data.team[1].title
 		| .
