@@ -1,6 +1,14 @@
 CHANGELOG
 =========
 
+### [v2.0.3][2.0.3] (2020-08-20)
+
+#### Changed
+* Update the URLs of essay, podcast and portfolio.
+* Swap the podcast's link for the portfolio's.
+
+* * *
+
 ### [v2.0.2][2.0.2] (2019-12-21)
 
 #### Fixed
@@ -42,6 +50,7 @@ Testbench: <https://laerhsif.com/?v=2.0.0>
 
 
 
+[2.0.3]:         https://github.com/realfish/laerhsif/compare/v2.0.2...v2.0.3
 [2.0.2]:         https://github.com/realfish/laerhsif/compare/v2.0.1...v2.0.2
 [2.0.1]:         https://github.com/realfish/laerhsif/compare/v2.0.0...v2.0.1
 [2.0.0]:         https://github.com/realfish/laerhsif/compare/v1.3.0...v2.0.0
