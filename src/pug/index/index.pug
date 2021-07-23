@@ -3,7 +3,7 @@ extends ../_template
 block var
 	- var assetsPath = "./"
 	- var pageTitl = "鱼缸"
-	- var pageDisc = "An anti-disciplinary designer, making things at Type is Beautiful & CNPolitics."
+	- var pageDisc = "An anti-disciplinary designer, practising at Type Type & W3C"
 	- var pageKeyw = "鱼缸, 钱争予, realfish, laerhsif, designer, typographer, developer"
 	- var pageLink = siteRoot + "/"
 	- var pageHero = siteRoot + assetsPath + "assets/social-thumb.png?v=" + verTag
@@ -14,7 +14,7 @@ block var
 	//--- Data
 	-
 		var data = {
-			"title": "尚在注水的魚缸",
+			"title": "魚缸尚在注水",
 			"desc": {
 				"en": "An anti-disciplinary designer.",
 				"jp": "また、一職人である。"
@@ -51,11 +51,11 @@ block var
 			],
 			"team": [
 				{
-					"title": "Type is Beautiful",
+					"title": "The Type",
 					"url": "https://thetype.com/author/laerhsif"
 				}, {
-					"title": "CNPolitics",
-					"url": "http://cnpolitics.org/author/qianzhengyu"
+					"title": "CLReq",
+					"url": "https://github.com/w3c/clreq"
 				}
 			]
 		}
@@ -79,8 +79,8 @@ block bodyMain
 						span.avatar-name= item.title
 
 block bodyFooter
-	footer.foot Making things at 
+	footer.foot practising at 
 		a.foot-team(href=data.team[0].url)= data.team[0].title
 		span.foot-ampersand  &amp; 
 		a.foot-team(href=data.team[1].url)= data.team[1].title
-		| .
+		//- | .
