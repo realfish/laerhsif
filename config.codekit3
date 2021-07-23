@@ -12,7 +12,7 @@
     "\/.gh-pages" : {
       "ft" : 65536,
       "oA" : 1,
-      "oAP" : "\/doc\/.gh-pages",
+      "oAP" : "\/docs\/.gh-pages",
       "oF" : 0
     },
     "\/.gitignore" : {
@@ -20,7 +20,7 @@
       "ft" : 8192,
       "hM" : 0,
       "oA" : 1,
-      "oAP" : "\/doc\/.gitignore",
+      "oAP" : "\/docs\/.gitignore",
       "oF" : 1
     },
     "\/CHANGELOG.md" : {
@@ -33,7 +33,7 @@
       "ft" : 4096,
       "hM" : 0,
       "oA" : 1,
-      "oAP" : "\/doc\/CHANGELOG.html",
+      "oAP" : "\/docs\/CHANGELOG.html",
       "oF" : 1,
       "oFM" : 0,
       "oS" : 0,
@@ -47,19 +47,19 @@
       "ft" : 8192,
       "hM" : 0,
       "oA" : 1,
-      "oAP" : "\/doc\/deploy.realfish",
+      "oAP" : "\/docs\/deploy.realfish",
       "oF" : 1
     },
     "\/design" : {
       "ft" : 65536,
       "oA" : 1,
-      "oAP" : "\/doc\/design",
+      "oAP" : "\/docs\/design",
       "oF" : 0
     },
-    "\/doc" : {
+    "\/docs" : {
       "ft" : 65536,
       "oA" : 1,
-      "oAP" : "\/doc\/doc",
+      "oAP" : "\/docs\/docs",
       "oF" : 0
     },
     "\/proxy.realfish" : {
@@ -67,7 +67,7 @@
       "ft" : 8192,
       "hM" : 0,
       "oA" : 1,
-      "oAP" : "\/doc\/proxy.realfish",
+      "oAP" : "\/docs\/proxy.realfish",
       "oF" : 1
     },
     "\/proxyunset.realfish" : {
@@ -75,14 +75,14 @@
       "ft" : 8192,
       "hM" : 0,
       "oA" : 1,
-      "oAP" : "\/doc\/proxyunset.realfish",
+      "oAP" : "\/docs\/proxyunset.realfish",
       "oF" : 1
     },
     "\/src\/assets\/apple-touch-icon-60.png" : {
       "ft" : 32768,
       "iS" : 1555,
       "oA" : 0,
-      "oAP" : "\/doc\/assets\/apple-touch-icon-60.png",
+      "oAP" : "\/docs\/assets\/apple-touch-icon-60.png",
       "oF" : 3,
       "oIPL" : 0,
       "opt" : 1,
@@ -95,7 +95,7 @@
       "ft" : 32768,
       "iS" : 2021,
       "oA" : 0,
-      "oAP" : "\/doc\/assets\/apple-touch-icon-76.png",
+      "oAP" : "\/docs\/assets\/apple-touch-icon-76.png",
       "oF" : 3,
       "oIPL" : 0,
       "opt" : 1,
@@ -108,7 +108,7 @@
       "ft" : 32768,
       "iS" : 3315,
       "oA" : 0,
-      "oAP" : "\/doc\/assets\/apple-touch-icon-120.png",
+      "oAP" : "\/docs\/assets\/apple-touch-icon-120.png",
       "oF" : 3,
       "oIPL" : 0,
       "opt" : 1,
@@ -121,7 +121,7 @@
       "ft" : 32768,
       "iS" : 4460,
       "oA" : 0,
-      "oAP" : "\/doc\/assets\/apple-touch-icon-152.png",
+      "oAP" : "\/docs\/assets\/apple-touch-icon-152.png",
       "oF" : 3,
       "oIPL" : 0,
       "opt" : 1,
@@ -134,7 +134,7 @@
       "ft" : 32768,
       "iS" : 5293,
       "oA" : 0,
-      "oAP" : "\/doc\/assets\/apple-touch-icon-180.png",
+      "oAP" : "\/docs\/assets\/apple-touch-icon-180.png",
       "oF" : 3,
       "oIPL" : 0,
       "opt" : 1,
@@ -147,7 +147,7 @@
       "ft" : 32768,
       "iS" : 3315,
       "oA" : 0,
-      "oAP" : "\/doc\/assets\/apple-touch-icon.png",
+      "oAP" : "\/docs\/assets\/apple-touch-icon.png",
       "oF" : 3,
       "oIPL" : 0,
       "opt" : 1,
@@ -161,14 +161,14 @@
       "ft" : 8192,
       "hM" : 0,
       "oA" : 2,
-      "oAP" : "\/doc\/assets\/favicon.ico",
+      "oAP" : "\/docs\/assets\/favicon.ico",
       "oF" : 0
     },
     "\/src\/assets\/social-thumb.png" : {
       "ft" : 32768,
       "iS" : 11030,
       "oA" : 0,
-      "oAP" : "\/doc\/assets\/social-thumb.png",
+      "oAP" : "\/docs\/assets\/social-thumb.png",
       "oF" : 3,
       "oIPL" : 0,
       "opt" : 1,
@@ -182,7 +182,7 @@
       "ft" : 8192,
       "hM" : 0,
       "oA" : 2,
-      "oAP" : "\/doc\/CNAME",
+      "oAP" : "\/docs\/CNAME",
       "oF" : 0
     },
     "\/src\/javascript\/_app.js" : {
@@ -191,7 +191,7 @@
       "ma" : 0,
       "mi" : 1,
       "oA" : 0,
-      "oAP" : "\/doc\/assets\/app.js",
+      "oAP" : "\/docs\/assets\/app.js",
       "oF" : 3,
       "sC" : 3,
       "tS" : 1
@@ -202,7 +202,7 @@
       "ma" : 0,
       "mi" : 1,
       "oA" : 0,
-      "oAP" : "\/doc\/assets\/libs.js",
+      "oAP" : "\/docs\/assets\/libs.js",
       "oF" : 3,
       "sC" : 0,
       "tS" : 0
@@ -213,7 +213,7 @@
       "ma" : 0,
       "mi" : 0,
       "oA" : 1,
-      "oAP" : "\/doc\/javascript\/min\/_misc-min.js",
+      "oAP" : "\/docs\/javascript\/min\/_misc-min.js",
       "oF" : 1,
       "sC" : 3,
       "tS" : 0
@@ -224,7 +224,7 @@
       "ma" : 0,
       "mi" : 1,
       "oA" : 1,
-      "oAP" : "\/doc\/javascript\/polyfill\/min\/dom4.max-min.js",
+      "oAP" : "\/docs\/javascript\/polyfill\/min\/dom4.max-min.js",
       "oF" : 0,
       "sC" : 3,
       "tS" : 0
@@ -235,7 +235,7 @@
       "ma" : 0,
       "mi" : 1,
       "oA" : 1,
-      "oAP" : "\/doc\/javascript\/polyfill\/min\/requestAnimationFrame-min.js",
+      "oAP" : "\/docs\/javascript\/polyfill\/min\/requestAnimationFrame-min.js",
       "oF" : 0,
       "sC" : 3,
       "tS" : 0
@@ -246,7 +246,7 @@
       "ma" : 0,
       "mi" : 1,
       "oA" : 1,
-      "oAP" : "\/doc\/javascript\/view\/min\/home-min.js",
+      "oAP" : "\/docs\/javascript\/view\/min\/home-min.js",
       "oF" : 0,
       "sC" : 3,
       "tS" : 1
@@ -261,7 +261,7 @@
       "ma" : 1,
       "mS" : 0,
       "oA" : 1,
-      "oAP" : "\/doc\/assets\/_define.css",
+      "oAP" : "\/docs\/assets\/_define.css",
       "oF" : 0,
       "oS" : 0,
       "pg" : 0,
@@ -279,7 +279,7 @@
       "ma" : 0,
       "mS" : 0,
       "oA" : 0,
-      "oAP" : "\/doc\/assets\/app.css",
+      "oAP" : "\/docs\/assets\/app.css",
       "oF" : 2,
       "oS" : 1,
       "pg" : 0,
@@ -297,7 +297,7 @@
       "ma" : 1,
       "mS" : 0,
       "oA" : 1,
-      "oAP" : "\/doc\/assets\/basis.css",
+      "oAP" : "\/docs\/assets\/basis.css",
       "oF" : 0,
       "oS" : 0,
       "pg" : 0,
@@ -315,7 +315,7 @@
       "ma" : 1,
       "mS" : 0,
       "oA" : 1,
-      "oAP" : "\/doc\/less\/assets\/avatar.css",
+      "oAP" : "\/docs\/less\/assets\/avatar.css",
       "oF" : 0,
       "oS" : 0,
       "pg" : 0,
@@ -333,7 +333,7 @@
       "ma" : 1,
       "mS" : 0,
       "oA" : 1,
-      "oAP" : "\/doc\/less\/assets\/home.css",
+      "oAP" : "\/docs\/less\/assets\/home.css",
       "oF" : 0,
       "oS" : 0,
       "pg" : 0,
@@ -351,7 +351,7 @@
       "ma" : 1,
       "mS" : 0,
       "oA" : 1,
-      "oAP" : "\/doc\/less\/assets\/normalize.css",
+      "oAP" : "\/docs\/less\/assets\/normalize.css",
       "oF" : 0,
       "oS" : 0,
       "pg" : 0,
@@ -365,7 +365,7 @@
       "ft" : 512,
       "hM" : 0,
       "oA" : 1,
-      "oAP" : "\/doc\/_head.html",
+      "oAP" : "\/docs\/_head.html",
       "oF" : 0,
       "oS" : 0
     },
@@ -375,7 +375,7 @@
       "ft" : 512,
       "hM" : 0,
       "oA" : 1,
-      "oAP" : "\/doc\/_template.html",
+      "oAP" : "\/docs\/_template.html",
       "oF" : 0,
       "oS" : 0
     },
@@ -385,15 +385,15 @@
       "ft" : 512,
       "hM" : 1,
       "oA" : 0,
-      "oAP" : "\/doc\/index.html",
-      "oF" : 2,
+      "oAP" : "\/docs\/index.html",
+      "oF" : 3,
       "oS" : 1
     },
     "\/src\/pug\/index\/logo.svg" : {
       "ft" : 2097152,
       "miP" : 0,
       "oA" : 1,
-      "oAP" : "\/doc\/pug\/index\/logo.svg",
+      "oAP" : "\/docs\/pug\/index\/logo.svg",
       "oF" : 0,
       "opt" : 0,
       "plM" : 3758088159,
@@ -412,7 +412,7 @@
     "displayValueWasSetByUser" : 0,
     "iconImageName" : "\/src\/assets\/apple-touch-icon-180.png",
     "iconImageWasSetByUser" : 0,
-    "lastBuiltDate" : 648730129.40478301
+    "lastBuiltDate" : 648730451.19747496
   },
   "projectSettings" : {
     "abortBuildOnError" : 1,
@@ -708,7 +708,7 @@
     "browserslistString" : ">0.1%, last 2 versions, Firefox ESR, not dead",
     "buildEnvironment" : 0,
     "buildFolderActive" : 1,
-    "buildFolderName" : "doc",
+    "buildFolderName" : "docs",
     "cleanBuild" : 1,
     "coffeeLintFlags2" : {
       "arrow_spacing" : {
@@ -2786,7 +2786,7 @@
     "webpPresets" : {
 
     },
-    "websiteRelativeRoot" : "doc"
+    "websiteRelativeRoot" : "docs"
   },
   "settingsFileVersion" : "3"
 }
