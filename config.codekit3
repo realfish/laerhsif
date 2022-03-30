@@ -9,12 +9,6 @@
   ],
   "creatorBuild" : "34335",
   "files" : {
-    "\/.gh-pages" : {
-      "ft" : 65536,
-      "oA" : 1,
-      "oAP" : "\/docs\/.gh-pages",
-      "oF" : 0
-    },
     "\/.github" : {
       "ft" : 65536,
       "oA" : 1,
