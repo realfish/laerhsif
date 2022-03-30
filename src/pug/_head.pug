@@ -1,5 +1,5 @@
 -
-	var verTag = "2.0.5"
+	var verTag = "2.1.0-alpha"
 	var viewport = "width=device-width, viewport-fit=cover"
 		//- + ",height=device-height"
 		+ ",initial-scale=1.0"
@@ -13,7 +13,7 @@ head
 	meta(name="description" content=pageDisc)
 	meta(name="keywords" content=pageKeyw)
 	meta(name="viewport" content=viewport)
-	meta(name="theme-color" content="#000")
+	meta(name="theme-color" content="#fcfcfc")
 
 	meta(name="apple-mobile-web-app-capable" content="yes")
 	meta(name="apple-mobile-web-app-status-bar-style" content="default")
@@ -28,12 +28,12 @@ head
 	link(rel="shortcut icon" href=`${assetsPath}assets/favicon.ico?v=${verTag}`)
 	
 	block socialMetas
-		meta(property="og:title" content="#{pageTitl}")
-		meta(property="og:description" content="#{pageDisc}")
-		meta(property="og:url" content="#{pageLink}")
-		meta(property="og:image" content="#{pageHero}")
-		meta(property="twitter:card" content="#{twitterType}")
-		meta(name="twitter:site" content="#{twitterUser}")
+		meta(property="og:title" content=pageTitl)
+		meta(property="og:description" content=pageDisc)
+		meta(property="og:url" content=pageLink)
+		meta(property="og:image" content=pageHero)
+		meta(property="twitter:card" content=twitterType)
+		meta(name="twitter:site" content=twitterUser)
 	
 	link(rel="stylesheet" href=`${assetsPath}assets/app.css?v=${verTag}`)
 	script(type="text/javascript").
