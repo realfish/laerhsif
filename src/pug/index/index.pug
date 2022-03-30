@@ -3,10 +3,10 @@ extends ../_template
 block var
 	- var assetsPath = "./"
 	- var pageTitl = "鱼缸"
-	- var pageDisc = "An anti-disciplinary designer, practising at Type Type & W3C"
+	- var pageDisc = "An anti-disciplinary designer, contributing to Type Type & CLReq"
 	- var pageKeyw = "鱼缸, 钱争予, realfish, laerhsif, designer, typographer, developer"
 	- var pageLink = siteRoot + "/"
-	- var pageHero = siteRoot + assetsPath + "assets/social-thumb.png?v=" + verTag
+	- var pageHero = siteRoot + assetsPath + "assets/social-thumb.png" //- + verTag
 	- var twitterType = "summary"	// summary | summary_large_image
 	- var twitterUser = "@laerhsif"
 	- var bodyClass = "home"
@@ -32,18 +32,22 @@ block var
 				}, {
 					"id": "podcast",
 					"title": "Podcast",
-					"url": "https://podcasts.apple.com/cn/podcast/%E5%AD%97%E8%B0%88%E5%AD%97%E7%95%85/id1041704528"
+					//- "url": "https://podcasts.apple.com/cn/podcast/%E5%AD%97%E8%B0%88%E5%AD%97%E7%95%85/id1041704528"
+					"url": "https://www.thetype.com/typechat/"
 					
+				}, {
+					"id": "unsplash",
+					"title": "Unsplash",
+					"url": "https://unsplash.com/@realfish"
 				}, {
 					"id": "twitter",
 					"title": "Twitter",
 					"url": "https://twitter.com/laerhsif"
-					
 				}, {
-					"id": "instagram",
-					"title": "Instagram",
-					"url": "https://www.instagram.com/realfish"
-				}, {
+				//- 	"id": "instagram",
+				//- 	"title": "Instagram",
+				//- 	"url": "https://www.instagram.com/realfish"
+				//- }, {
 					"id": "github",
 					"title": "GitHub",
 					"url": "https://github.com/realfish"
@@ -79,7 +83,7 @@ block bodyMain
 						span.avatar-name= item.title
 
 block bodyFooter
-	footer.foot practising at 
+	footer.foot Contributing to 
 		a.foot-team(href=data.team[0].url)= data.team[0].title
 		span.foot-ampersand  &amp; 
 		a.foot-team(href=data.team[1].url)= data.team[1].title
