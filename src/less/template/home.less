@@ -1,38 +1,57 @@
+@keyframes wf-fadein {
+	0%   { opacity: 0; }
+	100% { opacity: 1; }
+}
+.wf-fadein() {
+	// Webfont fade-in
+	opacity     : 0;
+	animation   : 1s ease-in 3s 1 forwards wf-fadein;
+	transition  : opacity 1s ease-in;
+	will-change : opacity;
+	
+	// .wf-loading  & { opacity: 0; }
+	.wf-active   &,
+	.wf-inactive & {
+		animation: none;
+		opacity  : 1;
+	}
+}
+
 .home {
-	position: relative;
-	min-width: (288em/16);
+	position  : relative;
+	min-width : (288em/16);
 	min-height: (480em/16);
 }
 
 /*--- Header ---*/
 .head {
-	position: absolute;
-	left: 0;
-	right: 0;
-	bottom: 5.5em;
+	position : absolute;
+	left     : 0;
+	right    : 0;
+	bottom   : 5.5em;
 	font-size: (12em/16);
+	
+	.wf-fadein();
 }
 .title {
-	@tracking: .250em;
-	color: @text-black;
-	font-size: inherit;
-	font-weight: 400;
-	text-align: center;
-	letter-spacing: @tracking;
-	text-indent: @tracking;
-	line-height: 1;
+	color         : @text-black;
+	font-size     : inherit;
+	font-weight   : 400;
+	text-align    : center;
+	letter-spacing: .25em;
+	text-indent   : .25em;
 }
 /*--- Header END ---*/
 
 /*--- Main ---*/
 .home main {
-	position: relative;
-	top: 50%;
+	position  : relative;
+	top       : 50%;
 	text-align: center;
-	transform: translateY(-50%);
+	transform : translateY(-50%);
 }
 .logo {
-	width: (120em/16);
+	width : (120em/16);
 	height: (120em/16);
 	margin: 0 auto;
 	
@@ -41,47 +60,60 @@
 	}
 }
 .desc {
-	padding: 4em 0 9em;
-	font-size: (20em/16);
-	line-height: (24/20);
+	padding    : 4em 0 9em;
+	font-size  : (20em/16);
+	line-height: (26/20);
 	
 	:lang(en) {
-		@tracking: .015em;
-		letter-spacing: @tracking;
-		text-indent: @tracking;
+		letter-spacing: .015em;
+		text-indent   : .015em;
 	}
 	:lang(jp) {
-		@tracking: .050em;
-		letter-spacing: @tracking;
-		text-indent: (@tracking + .5em);
+		letter-spacing: .125em;
+		text-indent   : (.125em + .5em);
 	}
+	
+	.wf-fadein();
 }
 /*--- Main END ---*/
 
 /*--- Footer ---*/
 .foot {
-	@tracking: .025em;
-	position: absolute;
-	left: 0;
-	right: 0;
-	bottom: 4em;
-	color: @text-black;
-	font-size: (12em/16);
-	text-align: center;
-	letter-spacing: @tracking;
-	text-indent: @tracking;
-	font-style: italic;
-}
-.foot-ampersand {
-	// font-style: italic;
+	position      : absolute;
+	left          : 0;
+	right         : 0;
+	bottom        : 4em;
+	color         : @text-black;
+	font-size     : (12em/16);
+	text-align    : center;
+	letter-spacing: .025em;
+	text-indent   : .025em;
+	font-style    : italic;
+	
+	.wf-fadein();
 }
 .foot-team {
 	// font-style: italic;
+	text-decoration          : underline transparent;
+	text-decoration-thickness: 0.8px;
+	text-underline-offset    : 0.1em;
+	transition:
+		text-decoration-color .15s ease-out;
 	
+	.ua-Safari & {
+		text-decoration-thickness: 0.6px;
+		transition: none;
+	}
 	.ua-Pointer &:hover,
+	&:active {
+		text-decoration-color: currentColor;
+	}
+	
+	
+	/* .ua-Pointer &:hover,
 	&:active {
 		// border-bottom: 1px solid;
 		text-decoration: underline;
-	}
+	} */
 }
 /*--- Footer END ---*/

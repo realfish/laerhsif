@@ -10,15 +10,23 @@ body {
 	z-index                : @zIndex-0;
 	color                  : @text-main;
 	background-color       : @bg-main;
-	font-family            : @font-base-serif-jp;
+	font-family            : @font-ui;
 	line-height            : 1.0;
-	font-feature-settings  : "pnum", "kern", "liga";
+	font-feature-settings  : "kern", "liga", "palt", "pnum";
 	text-rendering         : optimizeLegibility;
 	-webkit-font-smoothing : antialiased;
 	-moz-osx-font-smoothing: grayscale;
 }
 
 /*====== Typographic reset ======*/
+:lang(jp),
+:lang(zh) {
+	font-family: @font-jp;
+}
+:lang(en) {
+	font-family: @font-en;
+}
+
 h1,
 ul,
 li,
