@@ -2,9 +2,9 @@ extends ../_template
 
 block var
 	- var assetsPath = "./"
-	- var pageTitl = "鱼缸"
-	- var pageDisc = "An anti-disciplinary designer, contributing to Type Type & CLReq"
-	- var pageKeyw = "鱼缸, 钱争予, realfish, laerhsif, designer, typographer, developer"
+	- var pageTitl = "魚缸"
+	- var pageDisc = "An anti-disciplinary designer, contributing to CLReq & Type Type"
+	- var pageKeyw = "魚缸, 鱼缸, zhengyu, realfish, laerhsif, designer, typographer, developer"
 	- var pageLink = siteRoot + "/"
 	- var pageHero = siteRoot + "/" + "assets/social-thumb.png?v=" + verTag
 	- var twitterType = "summary"	// summary | summary_large_image
@@ -55,18 +55,18 @@ block var
 			],
 			"team": [
 				{
-					"title": "The Type",
-					"url": "https://thetype.com/author/laerhsif"
-				}, {
 					"title": "CLReq",
 					"url": "https://github.com/w3c/clreq"
+				}, {
+					"title": "The Type",
+					"url": "https://thetype.com/author/laerhsif"
 				}
 			]
 		}
 
 block bodyHeader
 	header.head
-		h1.title= data.title
+		h1.title(lang="zh")= data.title
 
 block bodyMain
 	main(role="main")
@@ -83,7 +83,7 @@ block bodyMain
 						span.avatar-name= item.title
 
 block bodyFooter
-	footer.foot Contributing to 
+	footer.foot(lang="en") Contributing to 
 		a.foot-team(href=data.team[0].url)= data.team[0].title
 		span.foot-ampersand  &amp; 
 		a.foot-team(href=data.team[1].url)= data.team[1].title

@@ -13,7 +13,7 @@ block var
 
 - if (bodyClassModifier) bodyClassModifier = " " + bodyClassModifier
 
-html(lang="zh")
+html(lang="en")
 	block head
 		include _head
 	
@@ -25,5 +25,5 @@ html(lang="zh")
 		block bodyFooter
 		
 		block bodyScripts
-			script(type="text/javascript" src=`${assetsPath}assets/libs.js?v=${verTag}`)
+			//- script(type="text/javascript" src=`${assetsPath}assets/libs.js?v=${verTag}`)
 			script(type="text/javascript" src=`${assetsPath}assets/app.js?v=${verTag}`)
