@@ -53,8 +53,28 @@
 	transition      : transform 1s ease-in-out;
 	will-change     : transform;
 }
-.avatar-name {
+/* .avatar-name {
 	display: none;
+} */
+.avatar-name {
+	position      : absolute;
+	bottom        : 0;
+	left          : 50%;
+	display       : inline-block;
+	padding       : (4em/12) (6em/12);
+	border-radius : (4em/12);
+	background    : @text-black;
+	color         : @bg-main;
+	font-family   : @font-ui;
+	font-size     : (12em/16);
+	opacity       : 0.0001;
+	transform     : translateX(-50%);
+	transition:
+		opacity    .1s ease 0s,
+		transform .25s ease;
+	will-change:
+		opacity,
+		transform;
 }
 
 .is-paused {
@@ -92,7 +112,7 @@
 		transform       : translate3d((-@x), @y, 0);
 	}
 	
-	.avatar-name {
+	/* .avatar-name {
 		position      : absolute;
 		bottom        : 0;
 		left          : 50%;
@@ -111,7 +131,7 @@
 		will-change:
 			opacity,
 			transform;
-	}
+	} */
 	.avatar-name::after {
 		content   : "";
 		position  : absolute;
