@@ -25,7 +25,12 @@ head
 	link(rel="apple-touch-icon" sizes="120x120" href=`${assetsPath}assets/apple-touch-icon-120.png?v=${verTag}`)
 	link(rel="apple-touch-icon" sizes="152x152" href=`${assetsPath}assets/apple-touch-icon-152.png?v=${verTag}`)
 	link(rel="apple-touch-icon" sizes="180x180" href=`${assetsPath}assets/apple-touch-icon-180.png?v=${verTag}`)
-	link(rel="shortcut icon" href=`${assetsPath}assets/favicon.ico?v=${verTag}`)
+	
+	//- https://www.leereamsnyder.com/blog/favicons-in-2021
+	//- https://evilmartians.com/chronicles/how-to-favicon-in-2021-six-files-that-fit-most-needs
+	link(rel="icon" href=`/favicon.ico?v=${verTag}` sizes="any")
+	link(rel="icon" href=`/favicon.svg?v=${verTag}` type="image/svg+xml")
+	link(rel="mask-icon" href=`/favicon-mask.svg?v=${verTag}` color="#999999")
 	
 	block socialMetas
 		meta(property="og:title" content=pageTitl)

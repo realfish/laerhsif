@@ -156,13 +156,33 @@
       "q" : 100,
       "rq" : 75
     },
+    "\/src\/assets\/favicon-mask.svg" : {
+      "ft" : 2097152,
+      "miP" : 0,
+      "oA" : 0,
+      "oAP" : "\/docs\/favicon-mask.svg",
+      "oF" : 3,
+      "opt" : 1,
+      "plM" : 3758088159,
+      "prP" : 0
+    },
     "\/src\/assets\/favicon.ico" : {
       "cB" : 0,
       "ft" : 8192,
       "hM" : 0,
       "oA" : 2,
-      "oAP" : "\/docs\/assets\/favicon.ico",
-      "oF" : 0
+      "oAP" : "\/docs\/favicon.ico",
+      "oF" : 2
+    },
+    "\/src\/assets\/favicon.svg" : {
+      "ft" : 2097152,
+      "miP" : 0,
+      "oA" : 0,
+      "oAP" : "\/docs\/favicon.svg",
+      "oF" : 3,
+      "opt" : 1,
+      "plM" : 3758088159,
+      "prP" : 0
     },
     "\/src\/assets\/social-thumb.png" : {
       "ft" : 32768,
@@ -412,7 +432,7 @@
     "displayValueWasSetByUser" : 0,
     "iconImageName" : "\/src\/assets\/apple-touch-icon-180.png",
     "iconImageWasSetByUser" : 0,
-    "lastBuiltDate" : 670363163.30527604
+    "lastBuiltDate" : 672721746.38555098
   },
   "projectSettings" : {
     "abortBuildOnError" : 1,
