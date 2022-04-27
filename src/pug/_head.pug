@@ -5,6 +5,7 @@
 		+ ",initial-scale=1.0"
 		+ ",maximum-scale=1.0"
 		+ ",minimum-scale=1.0"
+	var appName  = "魚缸"
 
 head
 	meta(charset="utf-8")
@@ -17,6 +18,7 @@ head
 
 	meta(name="apple-mobile-web-app-capable" content="yes")
 	meta(name="apple-mobile-web-app-status-bar-style" content="default")
+	meta(name="apple-mobile-web-app-title" content=appName)
 	meta(name="format-detection" content="telephone=no")
 	meta(http-equiv="X-UA-Compatible" content="IE=edge,chrome=1")
 	
@@ -33,12 +35,15 @@ head
 	link(rel="mask-icon" href=`/favicon-mask.svg?v=${verTag}` color="#999999")
 	
 	block socialMetas
-		meta(property="og:title" content=pageTitl)
+		meta(property="og:type"        content="website")
+		meta(property="og:locale"      content="en")
+		meta(property="og:site_name"   content=appName)
+		meta(property="og:title"       content=pageTitl)
+		meta(property="og:image"       content=pageHero)
+		meta(property="og:url"         content=pageLink)
 		meta(property="og:description" content=pageDisc)
-		meta(property="og:url" content=pageLink)
-		meta(property="og:image" content=pageHero)
-		meta(property="twitter:card" content=twitterType)
-		meta(name="twitter:site" content=twitterUser)
+		meta(name="twitter:card" content=twitterType)
+		meta(name="twitter:site" content="@laerhsif")
 	
 	link(rel="stylesheet" href=`${assetsPath}assets/app.css?v=${verTag}`)
 	//- script(type="text/javascript").
